@@ -24,6 +24,8 @@
 ## Server
 * #### Apache Tomcat 9.0
 * #### Java MultiThread Server
+## System configuration
+   ![image](https://user-images.githubusercontent.com/48934537/71778339-09207500-2ff0-11ea-8c21-1403961e799b.png)
 ## Functions
 ### POS
   * #### When running the login window, move the focus to the password, log in using the Enter key
