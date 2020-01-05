@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.poscapp">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Posc_Logo_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Posc_Home_Activity"></activity>
+        <activity android:name=".Posc_Search_Activity"></activity>
+        <activity android:name=".Posc_Select_Activity"></activity>
+        <activity android:name=".Posc_Menu_Activity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Posc_Address_Activity"></activity>
+        <activity android:name=".Posc_Address_Input_Activity"></activity>
+        <activity android:name=".Posc_Menu_Order_Activity"></activity>
+        <activity android:name=".Posc_Sit_Activity"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"></activity>
+        <activity android:name=".Posc_Menu_Finish_Order_Activity"></activity>
+        <activity android:name=".Posc_Menu_Reser_Activity"></activity>
+    </application>
+</manifest>

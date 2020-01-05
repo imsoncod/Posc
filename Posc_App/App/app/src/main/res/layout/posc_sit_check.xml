@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sit_layout"
+    android:layout_width="match_parent"
+    android:layout_height="555dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="555dp"
+        android:background="@drawable/btn_style_6"
+        android:orientation="vertical">
+    <FrameLayout
+        android:layout_gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00ffffff">
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="49dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="#00FF0000"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="100dp"
+            android:gravity="right"
+            android:text="1층"
+            android:fontFamily="@font/mainfont"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="100dp"
+            android:background="#00FF0000"
+            android:gravity="left"
+            android:text="2층"
+            android:fontFamily="@font/mainfont"
+            android:textSize="30dp" />
+    </FrameLayout>
+
+    <WebView
+        android:id="@+id/sit_view"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="460dp" />
+
+    <Button
+        android:id="@+id/sit_canc"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="bottom"
+        android:background="#00FF0000"
+        android:fontFamily="@font/mainfont"
+        android:gravity="center"
+        android:text="확인"
+        android:textSize="25dp" />
+    </LinearLayout>
+</LinearLayout>

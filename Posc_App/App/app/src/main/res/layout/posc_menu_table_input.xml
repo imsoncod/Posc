@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TableLayout
+        android:id="@+id/menu_table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_marginTop="-1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#000000"/>
+
+        <TableRow
+            android:id="@+id/menu_tablerow">
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/menu_table_input_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="7dp"
+                    android:textSize="20dp"
+                    android:text="11111"
+                    android:fontFamily="@font/mainfont"
+                    android:textColor="#505050" />
+
+                <TextView
+                    android:id="@+id/menu_table_input_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="7dp"
+                    android:textSize="16dp"
+                    android:text="11111"
+                    android:fontFamily="@font/mainfont"
+                    android:textColor="#8F8F8F" />
+
+                <TextView
+                    android:id="@+id/menu_table_input_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="7dp"
+                    android:textSize="17dp"
+                    android:text="11111"
+                    android:fontFamily="@font/mainfont"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+    </TableLayout>
+    <View
+    android:layout_marginTop="3dp"
+    android:layout_width="wrap_content"
+    android:layout_height="1dp"
+    android:background="#000000"/>
+
+</LinearLayout>

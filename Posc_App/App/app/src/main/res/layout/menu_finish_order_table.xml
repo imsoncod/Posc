@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="주문표"
+        android:textSize="25dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#000000"
+        android:fontFamily="@font/mainfont"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:src="@drawable/line_style_1"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/order_finish_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="이름"
+            android:textSize="25dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#000000"
+            android:fontFamily="@font/mainfont"
+            android:layout_gravity="left"/>
+
+        <Button
+            android:id="@+id/message_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="10dp"
+            android:text="메세지"
+            android:background="@drawable/btn_style_2"
+            android:textSize="18dp"
+            android:fontFamily="@font/mainfont"/>
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:src="@drawable/line_style_1"/>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="300dp">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:id="@+id/order_finish_option_layout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:src="@drawable/line_style_1"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_weight="1"
+        android:background="#C5C5C5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/mainfont"
+            android:gravity="left"
+            android:text="배달요금"
+            android:textColor="#FF464545"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/line_style_1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="57dp"
+            android:fontFamily="@font/mainfont"
+            android:gravity="left"
+            android:text="합계"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/order_finish_del_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/mainfont"
+            android:gravity="center"
+            android:text="2000원"
+            android:textColor="#464545"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/order_finish_sum_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/mainfont"
+            android:gravity="center"
+            android:text="10000원"
+            android:textColor="#FF0000"
+            android:textSize="25dp" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:src="@drawable/line_style_1"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/order_finish_del"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:background="#00FFFFFF"
+            android:fontFamily="@font/mainfont"
+            android:gravity="center"
+            android:text="배달"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/order_finish_reg"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="140dp"
+            android:background="#00FFFFFF"
+            android:fontFamily="@font/mainfont"
+            android:gravity="center"
+            android:text="예약"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/order_finish_cancle"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:background="#00FFFFFF"
+            android:fontFamily="@font/mainfont"
+            android:gravity="center"
+            android:text="취소"
+            android:textColor="#FF0000"
+            android:textSize="25dp" />
+    </FrameLayout>
+
+</LinearLayout>

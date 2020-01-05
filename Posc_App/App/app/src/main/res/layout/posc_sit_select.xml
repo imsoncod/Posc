@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/select_layout"
+    android:layout_width="match_parent"
+    android:layout_height="552dp"
+    android:background="#00FF0000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/btn_style_6"
+        android:layout_height="552dp">
+    <FrameLayout
+        android:layout_gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00FF0000">
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="49dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="#00FF0000"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="110dp"
+            android:gravity="right"
+            android:text="1층"
+            android:fontFamily="@font/mainfont"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="110dp"
+            android:background="#00FF0000"
+            android:gravity="left"
+            android:text="2층"
+            android:fontFamily="@font/mainfont"
+            android:textSize="30dp" />
+    </FrameLayout>
+
+    <WebView
+        android:layout_gravity="center"
+        android:id="@+id/sit_view"
+        android:layout_width="match_parent"
+        android:layout_height="460dp" />
+
+    <View
+        android:layout_marginTop="-1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#000000"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#00FF0000">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/btn_style_5"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/option_finish_sub"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:background="#00FF0000"
+                    android:fontFamily="@font/mainfont"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textSize="29dp" />
+
+                <TextView
+                    android:id="@+id/option_finish_total"
+                    android:layout_width="33dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mainfont"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="#FF0000"
+                    android:textSize="27dp" />
+
+                <Button
+                    android:id="@+id/option_finish_add"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:background="#00FF0000"
+                    android:fontFamily="@font/mainfont"
+                    android:text="+"
+                    android:textSize="27dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_select_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="100dp"
+                android:background="#00FF0000"
+                android:fontFamily="@font/mainfont"
+                android:gravity="center"
+                android:text="예약"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btn_select_cancle"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_gravity="right"
+                android:background="#00FF0000"
+                android:fontFamily="@font/mainfont"
+                android:gravity="center"
+                android:text="취소"
+                android:textSize="20dp" />
+
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

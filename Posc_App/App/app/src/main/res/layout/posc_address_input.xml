@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/address_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="13dp"
+        android:layout_gravity="left"
+        android:text="Null"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:fontFamily="@font/mainfont"/>
+
+    <EditText
+        android:id="@+id/address_view_input"
+        android:layout_width="390dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/mainfont"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/btn_style_2"/>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow
+                android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/address_succ"
+                android:layout_marginLeft="10dp"
+                android:layout_width="190dp"
+                android:layout_height="40dp"
+                android:textSize="20dp"
+                android:text="완료"
+                android:fontFamily="@font/mainfont"
+                android:background="@drawable/btn_style_1"/>
+
+            <Button
+                android:id="@+id/address_canc"
+                android:layout_width="190dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:text="취소"
+                android:fontFamily="@font/mainfont"
+                android:background="@drawable/btn_style_1"/>
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

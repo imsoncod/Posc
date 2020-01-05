@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/message_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#00FF0000"
+    android:layout_height="235dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@drawable/btn_style_8"
+        android:layout_height="235dp">
+
+        <EditText android:id="@+id/message_text"
+            android:layout_width="match_parent"
+            android:background="@drawable/btn_style_2"
+            android:layout_height="190dp"
+            android:lines="5"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:scrollHorizontally="false"
+            android:minWidth="10.0dip"
+            android:maxWidth="5.0dip"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:background="#00FF0000"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/message_ok"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:text="확인"
+                android:fontFamily="@font/mainfont"
+                android:background="#00FF0000"
+                android:layout_gravity="bottom|right"
+                android:textSize="20dp"
+                android:layout_marginRight="95dp"/>
+
+            <Button
+                android:id="@+id/message_no"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:background="#00FF0000"
+                android:text="취소"
+                android:fontFamily="@font/mainfont"
+                android:layout_gravity="bottom|right"
+                android:textSize="20dp"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

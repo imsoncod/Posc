@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/addressinput"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:text=""
+        android:textSize="25dp"
+        android:layout_marginBottom="10dp"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/mainfont"
+        android:layout_gravity="center"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#000000"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_marginTop="10dp">
+                <Button
+                    android:id="@+id/btnfood_1"
+                    android:layout_height="120dp"
+                    android:layout_width="120dp"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/mainfont"
+                    android:drawableTop="@drawable/kfood"
+                    android:background="@drawable/btn_style_1"
+                    android:gravity="center|bottom"
+                    android:textSize="26dp"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="15dp"
+                    android:text="한식"
+                    />
+                <Button
+                    android:id="@+id/btnfood_2"
+                    android:layout_height="120dp"
+                    android:layout_width="120dp"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/mainfont"
+                    android:background="@drawable/btn_style_1"
+                    android:drawableTop="@drawable/jfood"
+                    android:gravity="center|bottom"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="14dp"
+                    android:textSize="26dp"
+                    android:text="중식" />
+                <Button
+                    android:id="@+id/btnfood_3"
+                    android:layout_height="120dp"
+                    android:layout_width="120dp"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/mainfont"
+                    android:background="@drawable/btn_style_1"
+                    android:drawableTop="@drawable/hfood"
+                    android:gravity="center|bottom"
+                    android:paddingTop="14dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="15dp"
+                    android:textSize="26dp"
+                    android:text="양식" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="10dp">
+                <Button
+                    android:id="@+id/btnfood_4"
+                    android:layout_height="120dp"
+                    android:layout_width="120dp"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/mainfont"
+                    android:drawableTop="@drawable/cfood"
+                    android:background="@drawable/btn_style_1"
+                    android:gravity="center|bottom"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="12dp"
+                    android:textSize="26dp"
+                    android:text="치킨" />
+                <Button
+                    android:id="@+id/btnfood_5"
+                    android:layout_height="120dp"
+                    android:layout_width="120dp"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/mainfont"
+                    android:background="@drawable/btn_style_1"
+                    android:drawableTop="@drawable/bfood"
+                    android:gravity="center|bottom"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textSize="26dp"
+                    android:text="분식" />
+                <Button
+                    android:id="@+id/btnfood_6"
+                    android:layout_height="120dp"
+                    android:layout_width="120dp"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/mainfont"
+                    android:drawableTop="@drawable/rfood"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="15dp"
+                    android:background="@drawable/btn_style_1"
+                    android:gravity="center|bottom"
+                    android:textSize="26dp"
+                    android:text="야식" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/btnfood_7"
+                    android:layout_height="120dp"
+                    android:layout_width="120dp"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/mainfont"
+                    android:background="@drawable/btn_style_1"
+                    android:gravity="center|bottom"
+                    android:drawableTop="@drawable/jofood"
+                    android:paddingTop="13dp"
+                    android:paddingBottom="15dp"
+                    android:textSize="26dp"
+                    android:text="족발" />
+                <Button
+                    android:id="@+id/btnfood_8"
+                    android:layout_height="120dp"
+                    android:layout_width="120dp"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/mainfont"
+                    android:background="@drawable/btn_style_1"
+                    android:gravity="center|bottom"
+                    android:drawableTop="@drawable/dfood"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="15dp"
+                    android:textSize="26dp"
+                    android:text="일식" />
+                <Button
+                    android:layout_height="120dp"
+                    android:layout_width="120dp"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center|bottom"
+                    android:paddingBottom="15dp"
+                    android:fontFamily="@font/mainfont"
+                    android:background="@drawable/btn_style_1"
+                    android:textSize="26dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:layout_height="120dp"
+                    android:layout_width="120dp"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/mainfont"
+                    android:background="@drawable/btn_style_1"
+                    android:textSize="26dp" />
+                <Button
+                    android:layout_height="120dp"
+                    android:layout_width="120dp"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/mainfont"
+                    android:background="@drawable/btn_style_1"
+                    android:textSize="26dp" />
+                <Button
+                    android:layout_height="120dp"
+                    android:layout_width="120dp"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/mainfont"
+                    android:background="@drawable/btn_style_1"
+                    android:textSize="26dp" />
+            </TableRow>
+
+        </TableLayout>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:itemTextColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:menu="@menu/menu" />
+</LinearLayout>

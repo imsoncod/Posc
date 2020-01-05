@@ -1,0 +1,96 @@
+package client;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.net.Socket;
+import java.net.SocketException;
+import Frame.Frame_DeliveryNotice;
+import Frame.Frame_ReservationNotice;
+ 
+public class client {
+	public static Socket socket;
+	public static String s_name = "19-00001";
+	
+	public client() {
+		 try{
+	            String ServerIP = "192.168.0.2";
+	            socket = new Socket(ServerIP, 9190); //소켓 객체 생성        
+	            System.out.println("서버와 연결이 되었습니다......");
+	            //사용자로부터 얻은 문자열을 서버로 전송해주는 역할을 하는 쓰레드.
+	           
+	            /////////////* 사용자 이름 중복체크 (테스트용)*///////////////
+	            DataInputStream dis = new DataInputStream(socket.getInputStream());
+	            DataOutputStream dos = new DataOutputStream(socket.getOutputStream());
+	            //Scanner s = new Scanner(System.in);  
+	            while(true){
+	                dos.writeUTF(s_name);
+	                dos.flush();
+	                String chk_code = dis.readUTF();
+	                //System.out.println("chk_code=>"+chk_code);
+	                if(!chk_code.equals("!errCode404")){
+	                    break;
+	                }
+	                System.out.println("중복아이디입니다.");
+	            }
+	           
+	            /////////////////////////////////////////////////////////////
+	                  
+	            //서버에서 보내는 메시지를 사용자의 콘솔에 출력하는 쓰레드.
+	            Thread receiver = new Receiver(socket);        
+	            System.out.println("채팅방에 입장하였습니다.");
+	               
+	            receiver.start(); //스레드 시동
+	           
+	        }catch(Exception e){
+	            System.out.println("예외[MultiClient class]:"+e);
+	        }
+	}
+}//End class MultiClient
+ 
+ 
+/////////////////////////////////////////////////////////////////////
+ 
+//서버로부터 메시지를 읽는 클래스
+class Receiver extends Thread{
+   
+    Socket socket;
+    DataInputStream in;
+   
+    //Socket을 매개변수로 받는 생성자.
+    public Receiver(Socket socket){
+        this.socket = socket;
+       
+        try{
+            in = new DataInputStream(this.socket.getInputStream());
+        }catch(Exception e){
+            //System.out.println("예외:"+e);
+        }
+    }//생성자 --------------------
+   
+    @Override
+    public void run(){ //run()메소드 재정의
+       
+        while(in!=null){ //입력스트림이 null이 아니면..반복
+            try{        
+                String msg=in.readUTF();
+                
+                if(msg.equals("!errCode404")){
+                    System.out.println("채팅방에 동일한 이름이 존재합니다.");
+                }else{
+                    System.out.println(msg);
+                    String order[] = msg.split("@@");
+                    if(order[5].equals("r")) {
+                    	 new Frame_ReservationNotice(msg);
+                    }else {
+                    	 new Frame_DeliveryNotice(msg);
+                    }
+                }
+               
+                //서버로부터 읽어온 데이터를 콘솔에 출력
+               
+            }catch(SocketException e){             
+                 System.out.println("접속중인 서버와 연결이 끊어졌습니다.");
+            } catch(Exception e){              
+            }
+        }//while----
+    }//run()------
+}//class Receiver -------

@@ -1,0 +1,21 @@
+package Frame;
+
+import java.io.BufferedInputStream;
+import java.io.FileInputStream;
+
+import javazoom.jl.player.Player;
+
+public class te {
+
+	public static void main(String[] args) {
+		try {
+			BufferedInputStream buffer = new BufferedInputStream(new FileInputStream("/Posc/src/Frame/snd/Alarm.mp3"));
+			Player player = new Player(buffer);
+			player.play();
+		}catch(Exception e) {
+			
+		}
+
+	}
+
+}

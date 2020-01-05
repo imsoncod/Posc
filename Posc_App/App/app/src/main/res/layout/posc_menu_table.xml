@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_table_layout"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TableLayout
+        android:id="@+id/menu_table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_marginTop="-1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#000000"/>
+
+        <TableRow
+            android:id="@+id/menu_tablerow">
+            <ImageView
+                android:id="@+id/menu_table_img"
+                android:layout_marginTop="5dp"
+                android:layout_height="65dp"
+                android:layout_width="70dp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="65dp"
+                android:background="#818181"/>
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/menu_table_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="7dp"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/mainfont"
+                    android:textColor="#505050" />
+
+                <TextView
+                    android:id="@+id/menu_table_text"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_marginLeft="7dp"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/mainfont" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+    </TableLayout>
+    <View
+    android:layout_marginTop="3dp"
+    android:layout_width="wrap_content"
+    android:layout_height="1dp"
+    android:background="#000000"/>
+
+</LinearLayout>
