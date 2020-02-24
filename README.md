@@ -5,7 +5,7 @@
 #### So, we used POS to be installed in every store to solve the cost problem
 #### We have linked a very popular delivery application with POS
 ## Developer
-#### imsoncod, CJH
+#### imsoncod, [Raison-CJH](https://github.com/Raison-CJH)
 ## Development period
 #### About 4 weeks
 ## Language used
